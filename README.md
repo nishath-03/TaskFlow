@@ -1,16 +1,77 @@
-# React + Vite
+# TaskFlow — Enterprise Task Management Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow is a full stack enterprise task management platform built using Spring Boot and React. The application supports JWT authentication, role-based access control (RBAC), project management, task assignment, and Kanban-style workflow management.
 
-Currently, two official plugins are available:
+## Live Demo
+Frontend + Backend hosted on AWS EC2 using Nginx reverse proxy.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live URL:
+http://3.107.239.86
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- JWT Authentication & Authorization
+- Role-Based Access Control (Admin, Manager, Employee)
+- Project & Task Management
+- Kanban Task Board
+- Dashboard Analytics
+- RESTful APIs
+- Responsive UI with React + Bootstrap
+- AWS EC2 Deployment
+- Nginx Reverse Proxy
+- H2 Persistent Database
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Java 17
+- Spring Boot 3
+- Spring Security
+- Spring Data JPA
+- H2 Database
+- Maven
+
+### Frontend
+- React 18
+- Vite
+- Axios
+- Bootstrap 5
+- React Router DOM
+
+### Deployment
+- AWS EC2
+- Nginx
+- Linux
+- systemd
+
+## Demo Credentials
+
+### Admin
+Email: admin@taskflow.com  
+Password: admin123
+
+### Manager
+Email: manager@taskflow.com  
+Password: manager123
+
+### Employee
+Email: employee@taskflow.com  
+Password: emp123
+
+## Architecture
+
+Browser → Nginx → Spring Boot → H2 Database
+
+## Screenshots
+
+(Add screenshots here)
+
+## Future Improvements
+
+- PostgreSQL migration
+- Redis caching
+- Docker deployment
+- AWS RDS
+- CI/CD pipeline
+- Kafka notifications
+- WebSocket real-time updates
